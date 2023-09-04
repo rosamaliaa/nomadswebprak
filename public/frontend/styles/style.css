@@ -1,0 +1,261 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@NaN,0,0,0');
+
+/* root variable */
+:root {
+	--color-primary: #071c4d;
+	--color-secondary: #ff9e53;
+	--color-gray: #00000099;
+	--color-overlay: #00000066;
+	--color-white: #fff;
+
+	--font-primary: 'Playfair Display', serif;
+	--font-secondary: 'Assistant', sans-serif;
+
+	--border-radius: 5px;
+}
+
+/* global Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#hero {
+	height: 90vh;
+
+	/* image background */
+	background: linear-gradient(
+			to bottom,
+			var(--color-overlay),
+			var(--color-overlay)
+		),
+		url('../img/hero.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/* display  */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+#hero h1 {
+	font-family: var(--font-primary);
+	font-size: 4rem;
+	color: var(--color-white);
+	text-align: center;
+}
+
+#hero p {
+	margin-top: 2em;
+	font-family: var(--font-secondary);
+	color: var(--color-white);
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#hero > a {
+	margin-top: 2em;
+	padding: 0.5em 2em;
+	background-color: var(--color-secondary);
+	color: var(--color-white);
+	font-family: var(--font-secondary);
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: var(--border-radius);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#navbar {
+	background-color: var(--color-white);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
+	overflow: hidden;
+}
+
+#navbar .nav-logo {
+	height: 1.5em;
+	margin-left: 1.5em;
+}
+
+#navbar .nav-list {
+	display: flex;
+}
+
+.nav-item {
+	padding: 1.5em;
+	background-color: var(--color-white);
+}
+
+.nav-item a {
+	color: var(--color-primary);
+	font-family: var(--font-secondary);
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.nav-item:last-of-type {
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+.nav-item:last-of-type a {
+	color: var(--color-white);
+}
+
+section {
+	padding: 7em 0;
+}
+
+#about h2 {
+	font-family: var(--font-primary);
+	color: var(--color-primary);
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+#about .container > p {
+	margin-top: 0.5em;
+	font-family: var(--font-secondary);
+	color: var(--color-gray);
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.contact {
+	margin-top: 5em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5em;
+}
+
+#contactFrom {
+	display: flex;
+	flex-direction: column;
+}
+
+#contactForm :where(input, textarea) {
+	width: 100%;
+	padding: 1em;
+	margin-bottom: 1.5em;
+	border: 1px solid var(--color-gray);
+	border-radius: var(--border-radius);
+}
+
+#contactForm textarea {
+	height: 10em;
+	resize: none;
+	font-family: var(--font-secondary);
+}
+
+#contactForm :where(input, textarea)::placeholder {
+	font-family: var(--font-secondary);
+	color: var(--color-gray);
+	padding: 1em;
+	font-size: 1rem;
+}
+
+#contactForm :where(input, textarea):focus {
+	outline: 1px solid var(--color-primary);
+}
+
+#contactForm button {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	font-family: var(--font-secondary);
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 1em 1.2em;
+	border-radius: var(--border-radius);
+	border: none;
+	cursor: pointer;
+}
+
+.contact-detail {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-item {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	margin-bottom: 2em;
+}
+
+.contact-item h4 {
+	font-family: var(--font-secondary);
+	color: var(--color-primary);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.contact-item p {
+	font-family: var(--font-secondary);
+	color: var(--color-gray);
+	font-size: 1.2rem;
+}
+
+section#popular {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	position: relative;
+}
+
+.counter-card {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	transform: translate(-50%, -50%);
+
+	background-color: var(--color-white);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: var(--color-primary);
+	padding: 1.5em 4em;
+	border-radius: var(--border-radius);
+	text-align: center;
+}
+
+.counter-card h4 {
+	font-family: var(--font-secondary);
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.counter-card p {
+	font-family: var(--font-secondary);
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.divider {
+	width: 1px;
+	height: 3em;
+	border: 1px dashed var(--color-gray);
+}

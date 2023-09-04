@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="frontend/libraries/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="frontend/styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Semantic elements -->
+    <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+    <!-- Bootstrap navbar example -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="frontend/images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md-2">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="index.html">Paket Travel</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="index.html">Testimonial</a>
+            </li>
+          </ul>
+
+          <!-- Mobile button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0" id="btn-masuk-mobile">
+              Masuk
+            </button>
+          </form>
+          <!-- Desktop Button -->
+          <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" id="btn-masuk">
+              Masuk
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="container my-5">
+        <section class="section-register row justify-content-center mt-5" >
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <form action="" class="login">
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-sm-4 col-form-label pull-right">E-Mail Address</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label for="" class="col-sm-4 col-form-label pull-right">Password</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-8 button-wrapper">
+                                          <a href="index.html" class="btn btn-primary">
+                                            Login
+                                          </a>
+                                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+      
+    </main>
+    
+    <script src="frontend/libraries/retina/retina.js"></script>
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
